@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────
+# Supply Chain Disruption Predictor
+# ─────────────────────────────────────────
+
+# HTTP requests (pulling APIs)
+requests==2.32.3
+
+# Data processing
+pandas==2.2.2
+numpy==1.26.4
+
+# ML model
+xgboost==2.0.3
+scikit-learn==1.5.0
+
+# NLP / sentiment analysis
+transformers==4.41.2
+torch==2.3.0                  # required by transformers
+
+# Time series
+prophet==1.1.5
+
+# Scheduling (run pipeline on a schedule)
+#apache-airflow==2.9.1
+
+# Alerts
+slack-sdk==3.27.2             # Slack alerts
+twilio==9.1.0                 # SMS alerts (optional for MVP)
+
+# Utilities
+python-dotenv==1.0.1          # load API keys from .env file
+tqdm==4.66.4                  # progress bars for long downloads
+loguru==0.7.2                 # better logging than print statements
